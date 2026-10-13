@@ -1,0 +1,17 @@
+{
+  "title": "Distinct Numbers",
+  "limits": {
+    "default": {
+      "time_ms": 1000,
+      "memory_kb": 262144
+    },
+    "languages": {
+      "python3": {
+        "time_ms": 3000
+      },
+      "java": {
+        "time_ms": 2000
+      }
+    }
+  }
+}
