@@ -1,6 +1,6 @@
 # cses-zero-problems
 
-Problem definitions for [CSES-ZERO](https://github.com/hmaka/CSES-ZERO), a multi-language competitive programming judge.
+Problem definitions for [CSES-ZERO](https://cses-zero.fly.dev/), a multi-language competitive programming judge.
 
 Problems are authored as plain files in this repository. Contributors are welcome to open PRs to fix typos, improve test cases, add tips, write editorials, or contribute new problems.
 
@@ -31,7 +31,7 @@ problems/
 
 ### `problem.md`
 
-Markdown statement, rendered with [goldmark](https://github.com/yuin/goldmark) in safe mode (no raw HTML). Worked examples should be written inline in prose — the `tests/` folder is for judging only, not display.
+Markdown statement, rendered with [goldmark](https://github.com/yuin/goldmark). Worked examples should be written inline in prose — the `tests/` folder is for judging only, not display.
 
 Example skeleton:
 
