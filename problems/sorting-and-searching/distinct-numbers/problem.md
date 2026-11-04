@@ -29,3 +29,7 @@ Print one integer: the number of distinct values.
 ```
 2
 ```
+
+---
+
+*Adapted from [Distinct Numbers](https://cses.fi/problemset/task/1621) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; test cases are our own.*
