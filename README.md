@@ -104,6 +104,31 @@ For problems with multiple valid correct outputs (e.g. "print any valid path"). 
 
 On every merge to `main`, a GitHub webhook notifies the CSES-ZERO judge, which clones this repository and upserts problems into its database. Problems go live within seconds of merge. A daily safety-net job re-syncs everything in case a webhook was missed.
 
+## License and Attribution
+
+This repository's content — problem statements, test data, tips, editorials and checkers — is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) (CC BY-NC-SA 4.0). See [`LICENSE`](LICENSE).
+
+Many problems are adapted from the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, which is itself licensed CC BY-NC-SA 4.0. That license's share-alike terms are why this repository uses the same license. Thank you to CSES for making the problem set open.
+
+**Attribution requirement:** every problem adapted from another source ends its `problem.md` with a footer that:
+- links the original problem;
+- names the source, the author and the license;
+- states what was changed.
+
+For example:
+
+```markdown
+---
+
+*Adapted from [Weird Algorithm](https://cses.fi/problemset/task/1068) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; test cases are our own.*
+```
+
+If the test data comes from CSES rather than being written or generated here, say so in the "Changes" part (e.g. `test cases from CSES`).
+
+**Non-commercial:** CSES-ZERO is a non-profit project. Don't add content whose license forbids that use, and note that this license rules out commercial use of this repository's content (e.g. a paid tier or ad-supported redistribution).
+
 ## Contributing
 
 Open a PR. PRs are reviewed before merge — both for content quality and for catching malformed `meta.json` or test cases.
+
+By contributing, you agree that your contribution is licensed under CC BY-NC-SA 4.0, the same as the rest of this repository.
