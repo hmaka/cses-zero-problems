@@ -22,7 +22,7 @@ problems/
         │   └── 2.md
         ├── editorial.md             # optional — solution writeup
         └── checker/                 # optional — for problems with multiple valid outputs
-            └── checker.<lang>       # contract TBD
+            └── checker.py           # see the checker/ contract below
 ```
 
 `<category-slug>` and `<problem-slug>` must be lowercase, hyphen-separated, and unique. They serve as the problem's identity — renaming a folder renames the slug.
@@ -98,7 +98,33 @@ Full Markdown solution writeup. Rendered on a separate "Editorial" tab.
 
 ### `checker/` *(optional)*
 
-For problems with multiple valid correct outputs (e.g. "print any valid path"). Contract TBD — not yet implemented. Reserved for future use.
+Only for problems with more than one correct output (e.g. "print any valid permutation"). Without a checker, output must match `tests/<n>.out`, ignoring trailing whitespace.
+
+```
+checker/
+├── checker.py              # required: defines check()
+├── wrong/<n>-<label>.out   # outputs for test <n> that must be REJECTED
+└── valid/<n>-<label>.out   # other correct outputs for test <n> that must be ACCEPTED
+```
+
+**`checker.py` contract.** The judge runs it with **Python 3.8**, in the sandbox.
+- Define `check(input, output, answer)`. The three arguments are strings:
+  - `input`: the test input;
+  - `output`: the contestant's output;
+  - `answer`: `tests/<n>.out`, which is *one* valid answer.
+- Return `True` / `False`, or `(bool, message)`. The message is shown to the contestant when the answer is rejected, so make it specific: `"positions 3 and 4 hold 2 and 1, which differ by 1"`.
+- **Verify, don't solve.** Usually you check that the output has the required properties. Take what's hard to compute from `answer`, e.g. whether a solution exists at all (`NO SOLUTION`) or the optimal value.
+- **Raising an exception rejects the answer.** That's convenient when the contestant's output doesn't parse (`int("abc")`), but it also means a checker bug shows up as a rejection.
+- `print()` is fine for debugging; it never affects the verdict.
+- Only define functions; don't read stdin or files. An `if __name__ == "__main__":` block is fine for local experiments; the judge doesn't run it.
+
+**Self-tests.** CI runs [`scripts/check_checkers.py`](scripts/check_checkers.py) on every PR, under Python 3.8. It checks that:
+- every `tests/*.out` and `checker/valid/*` file is accepted (the checker isn't too strict);
+- every `checker/wrong/*` file is rejected (the checker isn't too lenient).
+
+Add a few `wrong/` cases for each way an answer can be wrong. A checker that accepts everything would otherwise go unnoticed, because correct submissions still pass. Run the self-tests locally with `python3 scripts/check_checkers.py`.
+
+See `problems/introductory-problems/permutations/` for an example.
 
 ## Sync to Judge
 
