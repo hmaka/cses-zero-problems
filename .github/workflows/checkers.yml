@@ -1,0 +1,21 @@
+# Self-tests every problem's checker against its reference, valid and
+# known-wrong outputs (scripts/check_checkers.py).
+name: checkers
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checkers:
+    runs-on: ubuntu-latest
+    # Same Python as the judge (Judge0 CE 1.13.1 ships CPython 3.8), so a
+    # checker using newer syntax fails here instead of at judging time.
+    container: python:3.8-slim
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - run: python3 scripts/check_checkers.py
