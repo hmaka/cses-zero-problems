@@ -15,6 +15,8 @@ import importlib.util
 import pathlib
 import sys
 
+sys.dont_write_bytecode = True  # importing checkers must not leave __pycache__/ in the repo
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 
