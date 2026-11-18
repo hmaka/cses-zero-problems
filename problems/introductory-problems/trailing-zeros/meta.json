@@ -1,0 +1,9 @@
+{
+  "title": "Trailing Zeros",
+  "limits": {
+    "default": {
+      "time_ms": 1000,
+      "memory_kb": 262144
+    }
+  }
+}
