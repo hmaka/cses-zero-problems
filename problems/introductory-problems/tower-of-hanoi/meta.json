@@ -1,0 +1,9 @@
+{
+  "title": "Tower of Hanoi",
+  "limits": {
+    "default": {
+      "time_ms": 1000,
+      "memory_kb": 262144
+    }
+  }
+}
