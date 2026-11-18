@@ -29,3 +29,7 @@ Print a line that contains all values of `n` during the algorithm, separated by 
 ```
 3 10 5 16 8 4 2 1
 ```
+
+---
+
+*Adapted from [Weird Algorithm](https://cses.fi/problemset/task/1068) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; test cases are our own.*
