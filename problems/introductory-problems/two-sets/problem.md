@@ -14,7 +14,7 @@ If the division is possible, then also print an example of how to create the set
 
 ## Constraints
 
-- 1 ≤ n ≤ 10^5
+- 1 ≤ n ≤ 10^6
 
 ## Examples
 
@@ -44,4 +44,4 @@ NO
 
 ---
 
-*Adapted from [Two Sets](https://cses.fi/problemset/task/1092) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; smaller maximum n; test cases are our own.*
+*Adapted from [Two Sets](https://cses.fi/problemset/task/1092) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; test cases from CSES.*

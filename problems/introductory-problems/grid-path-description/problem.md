@@ -28,4 +28,4 @@ Print one integer: the number of matching paths.
 
 ---
 
-*Adapted from [Grid Path Description](https://cses.fi/problemset/task/1625) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; time limit raised to 2 s for our slower judge hardware; test cases are our own.*
+*Adapted from [Grid Path Description](https://cses.fi/problemset/task/1625) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; time limit raised to 2 s for our slower judge hardware; test cases from CSES.*

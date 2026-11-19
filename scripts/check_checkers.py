@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Self-test every problem's checker. CI runs this on Python 3.8 (the judge's
-version) for every PR; run it locally with `python3 scripts/check_checkers.py`.
+version) for every PR; run it locally with `python3 scripts/check_checkers.py`,
+or pass problem slugs to check only those: `python3 scripts/check_checkers.py two-sets gray-code`.
 
 For each problems/<category>/<slug>/checker/checker.py:
   - every reference output tests/<n>.out must be ACCEPTED   (not too strict)
@@ -47,6 +48,13 @@ def test_number(path):
 def main():
     failures = 0
     checkers = sorted(ROOT.glob("problems/*/*/checker/checker.py"))
+    only = set(sys.argv[1:])
+    if only:
+        checkers = [c for c in checkers if c.parent.parent.name in only]
+        unknown = only - {c.parent.parent.name for c in checkers}
+        if unknown:
+            print("no checker for: %s" % ", ".join(sorted(unknown)))
+            sys.exit(1)
     for checker_py in checkers:
         problem = checker_py.parent.parent
         name = problem.relative_to(ROOT / "problems")
