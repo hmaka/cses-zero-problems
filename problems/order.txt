@@ -1,0 +1,3 @@
+# Category display order, as on CSES.
+introductory-problems
+sorting-and-searching

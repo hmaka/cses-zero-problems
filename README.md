@@ -158,3 +158,12 @@ If the test data comes from CSES rather than being written or generated here, sa
 Open a PR. PRs are reviewed before merge — both for content quality and for catching malformed `meta.json` or test cases.
 
 By contributing, you agree that your contribution is licensed under CC BY-NC-SA 4.0, the same as the rest of this repository.
+
+## Display order
+
+Problems show up in the order given by `order.txt` files, one slug per line (blank lines and `#` comments are ignored):
+
+- `problems/order.txt` orders the categories.
+- `problems/<category>/order.txt` orders the problems in that category. For CSES-derived categories, keep CSES's order.
+
+Anything not listed shows up after the listed entries, alphabetically. A listed name that doesn't exist fails the sync (so a typo can't silently scramble the list). When you add a problem, add its slug to the category's `order.txt`.
