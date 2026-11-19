@@ -31,4 +31,4 @@ Print the missing number.
 
 ---
 
-*Adapted from [Missing Number](https://cses.fi/problemset/task/1083) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; test cases are our own.*
+*Adapted from [Missing Number](https://cses.fi/problemset/task/1083) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; test cases from CSES.*

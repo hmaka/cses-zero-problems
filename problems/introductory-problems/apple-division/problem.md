@@ -34,4 +34,4 @@ One way: the first group has weights 2, 3 and 4 (total 9), and the second has 1 
 
 ---
 
-*Adapted from [Apple Division](https://cses.fi/problemset/task/1623) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; test cases are our own.*
+*Adapted from [Apple Division](https://cses.fi/problemset/task/1623) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; test cases from CSES.*

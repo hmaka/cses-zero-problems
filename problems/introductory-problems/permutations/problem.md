@@ -14,7 +14,7 @@ Print a beautiful permutation of `1, 2, ..., n`, with the numbers separated by s
 
 ## Constraints
 
-- 1 ≤ n ≤ 10^5
+- 1 ≤ n ≤ 10^6
 
 ## Examples
 
@@ -40,4 +40,4 @@ NO SOLUTION
 
 ---
 
-*Adapted from [Permutations](https://cses.fi/problemset/task/1070) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; smaller maximum n; test cases are our own.*
+*Adapted from [Permutations](https://cses.fi/problemset/task/1070) in the [CSES Problem Set](https://cses.fi/problemset/) by Antti Laaksonen, licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Changes: statement edited; test cases from CSES.*
