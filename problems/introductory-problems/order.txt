@@ -1,0 +1,25 @@
+# Display order: the CSES Problem Set order (https://cses.fi/problemset/).
+weird-algorithm
+missing-number
+repetitions
+increasing-array
+permutations
+number-spiral
+two-knights
+two-sets
+bit-strings
+trailing-zeros
+coin-piles
+palindrome-reorder
+gray-code
+tower-of-hanoi
+creating-strings
+apple-division
+chessboard-and-queens
+raab-game-i
+mex-grid-construction
+knight-moves-grid
+grid-coloring-i
+digit-queries
+string-reorder
+grid-path-description
